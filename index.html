@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Tester</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <button class="guide-btn" onclick="openGuide()">Guide</button>
+        <div class="guide">
+            <button class="close-btn" onclick="closeGuide()">X</button>
+            <h2>Hex code converter</h2>
+            <p>Click on Color Box and Select the color or type rgb and hex color code gonna be showed</p>
+            <hr>
+            <h2>Add color Box</h2>
+            <p>Select color first and Click the Add Color Box Button and the new color box can be generated</p>
+            <hr>
+            <h2>Change Bg</h2>
+            
+            <p>You can change page Background with this button</p>
+            <hr>
+            <h2>Refresh page For Reset</h2>
+            
+            <hr><h2>Love you All, by <span>thurahex</span></h2>
+            
+        </div>
+    </nav>
+    <h1 class="head">Color tester</h1>
+    <p id="demo"> </p>
+    <div class="btn">
+        <input type="color" id="color" onchange="crdCol()">
+    
+    <button onclick="addColorBox()" class="btn-btn">Add color box</button>
+    <button onclick="changeBg()"class="btn-btn">Change Bg</button>
+    </div>
+    
+
+    <div class="colorBox">
+        
+    </div>
+
+    <footer>
+        <p id="ftCrd">Developed by <span id="crd">@thurahex</span>. 2022-<script>const d =new Date()
+            let y = d.getFullYear()
+            document.write(y)</script></p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
